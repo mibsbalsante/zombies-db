@@ -1,4 +1,5 @@
 import { useSurvivorsContext } from "@ctx/Survivors"
+import { formatDate } from "@utl/format"
 
 import styles from "./styles.module.scss"
 
@@ -21,7 +22,7 @@ const Table = () => {
           {results.map(({ name, birthday, phone, community, infected }) => (
             <tr key={name + birthday}>
               <td>{name}</td>
-              <td>{birthday}</td>
+              <td>{formatDate(birthday)}</td>
               <td>{phone}</td>
               <td>{community}</td>
               <td>
