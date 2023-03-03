@@ -35,6 +35,8 @@ input,
   --color-bg: var(--color-grey);
   --color-bg-helper: var(--color-white);
   --color-text: var(--color-grey-2);
+  --color-primary: #778beb;
+  --color-secondary: #546de5;
   /* -- */
 
   color: var(--color-text);
