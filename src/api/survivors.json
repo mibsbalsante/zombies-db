@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Rick Grimes",
+    "birthday": "1970-01-18",
+    "phone": "(555) 555-1234",
+    "infected": false,
+    "community": "The Walking Dead",
+    "description": "A former sheriff's deputy who becomes the leader of a group of survivors in a zombie apocalypse."
+  },
+  {
+    "name": "Michonne",
+    "birthday": "1982-06-01",
+    "phone": "(555) 555-5678",
+    "infected": false,
+    "community": "The Walking Dead",
+    "description": "A fierce and skilled warrior who becomes a valued member of the survivor group led by Rick Grimes."
+  },
+  {
+    "name": "Tallahassee",
+    "birthday": "1975-11-02",
+    "phone": "(555) 555-9012",
+    "infected": false,
+    "community": "Zombieland",
+    "description": "A cynical and tough survivor who is on a mission to find the last Twinkie in a world overrun by zombies."
+  },
+  {
+    "name": "Shaun",
+    "birthday": "1975-04-14",
+    "phone": "(555) 555-3456",
+    "infected": false,
+    "community": "Shaun of the Dead",
+    "description": "An unambitious sales clerk who must rally his friends and family to fight off a zombie invasion in London."
+  },
+  {
+    "name": "Alice",
+    "birthday": "1975-09-10",
+    "phone": "(555) 555-7890",
+    "infected": false,
+    "community": "Resident Evil",
+    "description": "A former security officer who battles zombies and other biological monstrosities created by the Umbrella Corporation."
+  },
+  {
+    "name": "Columbus",
+    "birthday": "1986-08-04",
+    "phone": "(555) 555-2345",
+    "infected": false,
+    "community": "Zombieland",
+    "description": "A college student who has managed to survive in a world overrun by zombies by following a strict set of survival rules."
+  },
+  {
+    "name": "Selena",
+    "birthday": "1978-02-01",
+    "phone": "(555) 555-6789",
+    "infected": false,
+    "community": "28 Days Later",
+    "description": "A tough and resourceful survivor who teams up with a small group of people in a world devastated by a viral outbreak."
+  },
+  {
+    "name": "Jill Valentine",
+    "birthday": "1974-11-17",
+    "phone": "(555) 555-4321",
+    "infected": false,
+    "community": "Resident Evil",
+    "description": "A skilled member of S.T.A.R.S. who battles the undead and other bioweapons in a variety of dangerous situations."
+  },
+  {
+    "name": "Terry Chen",
+    "birthday": "1984-09-12",
+    "phone": "(555) 555-1357",
+    "infected": false,
+    "community": "Daybreak",
+    "description": "A delivery driver who becomes a reluctant hero in a world where the sun has turned people into zombie-like creatures."
+  },
+  {
+    "name": "Maggie Greene",
+    "birthday": "1985-01-01",
+    "phone": "(555) 555-2468",
+    "infected": false,
+    "community": "The Walking Dead",
+    "description": "A farm girl who becomes a skilled fighter and leader in a group of survivors trying to rebuild after a zombie apocalypse."
+  },
+  {
+    "name": "Peter",
+    "birthday": "1980-07-22",
+    "phone": "(555) 555-3690",
+    "infected": true,
+    "community": "Dawn of the Dead",
+    "description": "A member of a group of survivors who takes refuge in a shopping mall during a zombie outbreak, but becomes infected and turns into a zombie."
+  },
+  {
+    "name": "Shaun Riley",
+    "birthday": "1983-12-23",
+    "phone": "(555) 555-4801",
+    "infected": false,
+    "community": "Dead Rising",
+    "description": "A photojournalist who must navigate a mall filled with zombies and rescue survivors in order to uncover the truth behind the outbreak."
+  }
+]
