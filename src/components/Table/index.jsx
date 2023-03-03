@@ -19,17 +19,25 @@ const Table = () => {
           </tr>
         </tbody>
         <tbody>
-          {results.map(({ name, birthday, phone, community, infected }) => (
-            <tr key={name + birthday}>
-              <td>{name}</td>
-              <td>{formatDate(birthday)}</td>
-              <td>{phone}</td>
-              <td>{community}</td>
-              <td>
-                <input type="checkbox" checked={infected} readOnly />
+          {results.length > 0 ? (
+            results.map(({ name, birthday, phone, community, infected }) => (
+              <tr key={name + birthday}>
+                <td>{name}</td>
+                <td>{formatDate(birthday)}</td>
+                <td>{phone}</td>
+                <td>{community}</td>
+                <td>
+                  <input type="checkbox" checked={infected} readOnly />
+                </td>
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td className={styles.tableEmpty} colSpan={5}>
+                No results found.
               </td>
             </tr>
-          ))}
+          )}
         </tbody>
       </table>
     </div>
