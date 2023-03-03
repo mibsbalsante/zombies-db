@@ -1,12 +1,16 @@
 import { SurvivorsProvider } from "@ctx/Survivors"
+import Header from "@cmp/Header"
+import Search from "@cmp/Search"
 import Table from "@cmp/Table"
 
-import "./App.css"
+import styles from "./App.module.scss"
 
 function App() {
   return (
     <SurvivorsProvider>
-      <div className="App">
+      <div className={styles.app}>
+        <Header />
+        <Search />
         <Table />
       </div>
     </SurvivorsProvider>

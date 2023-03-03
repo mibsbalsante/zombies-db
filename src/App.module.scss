@@ -1,0 +1,8 @@
+.app {
+  position: relative;
+  padding-top: calc(24px + var(--header-height));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
