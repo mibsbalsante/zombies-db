@@ -1,0 +1,12 @@
+@mixin container {
+  margin: 0 auto;
+  width: var(--container-width);
+  max-width: var(--max-width);
+}
+
+@mixin flex-container {
+  @include container;
+
+  display: flex;
+  align-items: center;
+}
