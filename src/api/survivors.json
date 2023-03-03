@@ -1,5 +1,6 @@
 [
   {
+    "id": "e701b27f-5c5e-4d22-a810-7b9658e4a4f9",
     "name": "Rick Grimes",
     "birthday": "1970-01-18",
     "phone": "(555) 555-1234",
@@ -8,6 +9,7 @@
     "description": "A former sheriff's deputy who becomes the leader of a group of survivors in a zombie apocalypse."
   },
   {
+    "id": "f01f58dc-937d-4c67-bb08-82d157f7b9d6",
     "name": "Michonne",
     "birthday": "1982-06-01",
     "phone": "(555) 555-5678",
@@ -16,6 +18,7 @@
     "description": "A fierce and skilled warrior who becomes a valued member of the survivor group led by Rick Grimes."
   },
   {
+    "id": "d7b0c6c3-7f3f-49b7-b212-59a67a82a8f8",
     "name": "Tallahassee",
     "birthday": "1975-11-02",
     "phone": "(555) 555-9012",
@@ -24,6 +27,7 @@
     "description": "A cynical and tough survivor who is on a mission to find the last Twinkie in a world overrun by zombies."
   },
   {
+    "id": "a2ce8f22-940a-4d84-9b7e-8aaf1f7c1573",
     "name": "Shaun",
     "birthday": "1975-04-14",
     "phone": "(555) 555-3456",
@@ -32,6 +36,7 @@
     "description": "An unambitious sales clerk who must rally his friends and family to fight off a zombie invasion in London."
   },
   {
+    "id": "3ab6a2f6-905c-47c8-bb32-fae2a0d05e71",
     "name": "Alice",
     "birthday": "1975-09-10",
     "phone": "(555) 555-7890",
@@ -40,6 +45,7 @@
     "description": "A former security officer who battles zombies and other biological monstrosities created by the Umbrella Corporation."
   },
   {
+    "id": "c9cc9a0f-3d3b-4e67-a5a5-5a5dc8e1d4d4",
     "name": "Columbus",
     "birthday": "1986-08-04",
     "phone": "(555) 555-2345",
@@ -48,6 +54,7 @@
     "description": "A college student who has managed to survive in a world overrun by zombies by following a strict set of survival rules."
   },
   {
+    "id": "4e70397e-5a5d-4c81-8e05-4f4d4d4b4b2c",
     "name": "Selena",
     "birthday": "1978-02-01",
     "phone": "(555) 555-6789",
@@ -56,6 +63,7 @@
     "description": "A tough and resourceful survivor who teams up with a small group of people in a world devastated by a viral outbreak."
   },
   {
+    "id": "72bdfdb1-62da-46cc-8829-ef9f7c07f3d3",
     "name": "Jill Valentine",
     "birthday": "1974-11-17",
     "phone": "(555) 555-4321",
@@ -64,6 +72,7 @@
     "description": "A skilled member of S.T.A.R.S. who battles the undead and other bioweapons in a variety of dangerous situations."
   },
   {
+    "id": "83b19a8f-6cf2-4600-a9a7-1e00d64d123c",
     "name": "Terry Chen",
     "birthday": "1984-09-12",
     "phone": "(555) 555-1357",
@@ -72,6 +81,7 @@
     "description": "A delivery driver who becomes a reluctant hero in a world where the sun has turned people into zombie-like creatures."
   },
   {
+    "id": "8eeb7be9-6d9b-496e-a078-20d36c7cbbef",
     "name": "Maggie Greene",
     "birthday": "1985-01-01",
     "phone": "(555) 555-2468",
@@ -80,6 +90,7 @@
     "description": "A farm girl who becomes a skilled fighter and leader in a group of survivors trying to rebuild after a zombie apocalypse."
   },
   {
+    "id": "9e9c5114-4e0d-4e23-92d3-3c3850f98e56",
     "name": "Peter",
     "birthday": "1980-07-22",
     "phone": "(555) 555-3690",
@@ -88,6 +99,7 @@
     "description": "A member of a group of survivors who takes refuge in a shopping mall during a zombie outbreak, but becomes infected and turns into a zombie."
   },
   {
+    "id": "dbba41ee-cb80-4b90-9b03-fcbca9790bc8",
     "name": "Shaun Riley",
     "birthday": "1983-12-23",
     "phone": "(555) 555-4801",

@@ -23,7 +23,7 @@ const Table = () => {
         <tbody>
           {results.length > 0 ? (
             results.map(person => (
-              <tr key={person.name + person.birthday}>
+              <tr key={person.id}>
                 <td>{person.name}</td>
                 <td>{formatDate(person.birthday)}</td>
                 <td>{person.phone}</td>
