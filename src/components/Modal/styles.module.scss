@@ -1,0 +1,29 @@
+.overflow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-grey-2);
+    opacity: 0.4;
+  }
+}
+
+.modal {
+  @include flex-container;
+
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  background-color: var(--color-bg-helper);
+  margin: auto;
+  max-width: 800px;
+  padding: 24px 20px;
+}

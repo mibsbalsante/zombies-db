@@ -44,7 +44,7 @@ const Search = () => {
         <input
           className={styles.formInput}
           type="checkbox"
-          value={infected}
+          checked={infected}
           onChange={() => setInfected(!infected)}
         />
       </label>
