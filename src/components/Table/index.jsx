@@ -1,10 +1,11 @@
 import { useSurvivorsContext } from "@ctx/Survivors"
 import { formatDate } from "@utl/format"
+import { ReactComponent as IconEdit } from "@fa/pen-to-square.svg"
 
 import styles from "./styles.module.scss"
 
 const Table = () => {
-  const { results } = useSurvivorsContext()
+  const { setSelected, results } = useSurvivorsContext()
 
   return (
     <div className={styles.container}>
@@ -16,18 +17,33 @@ const Table = () => {
             <th>phone</th>
             <th>community</th>
             <th>infected</th>
+            <th></th>
           </tr>
         </tbody>
         <tbody>
           {results.length > 0 ? (
-            results.map(({ name, birthday, phone, community, infected }) => (
-              <tr key={name + birthday}>
-                <td>{name}</td>
-                <td>{formatDate(birthday)}</td>
-                <td>{phone}</td>
-                <td>{community}</td>
+            results.map(person => (
+              <tr key={person.name + person.birthday}>
+                <td>{person.name}</td>
+                <td>{formatDate(person.birthday)}</td>
+                <td>{person.phone}</td>
+                <td>{person.community}</td>
                 <td>
-                  <input type="checkbox" checked={infected} readOnly />
+                  <input
+                    className={styles.tableCheckbox}
+                    type="checkbox"
+                    checked={person.infected}
+                    readOnly
+                  />
+                </td>
+                <td>
+                  <button
+                    onClick={() => setSelected(person)}
+                    className={styles.tableEdit}
+                    title="Edit"
+                  >
+                    <IconEdit />
+                  </button>
                 </td>
               </tr>
             ))

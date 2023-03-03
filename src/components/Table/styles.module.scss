@@ -13,15 +13,39 @@
   th {
     text-align: left;
     text-transform: capitalize;
+    padding: 2px 8px 4px;
+    white-space: nowrap;
   }
 
-  th,
   td {
-    padding: 2px 8px;
+    padding: 0 8px;
     white-space: nowrap;
   }
 
   &Empty {
     text-align: center;
+  }
+
+  &Checkbox {
+    width: 1.2rem;
+    height: 1.2rem;
+    vertical-align: middle;
+  }
+
+  &Edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0 none;
+    padding: 0;
+    height: 42px;
+    width: 42px;
+    margin-left: auto;
+    cursor: pointer;
+
+    svg {
+      fill: var(--color-secondary);
+    }
   }
 }

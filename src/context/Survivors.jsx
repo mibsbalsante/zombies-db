@@ -10,6 +10,7 @@ export const SurvivorsProvider = ({ children }) => {
   // data
   const [list, setList] = useState([])
   const [communityList, setCommunityList] = useState([])
+  const [selected, setSelected] = useState(null)
 
   // filtering
   const [results, setResults] = useState([])
@@ -63,6 +64,8 @@ export const SurvivorsProvider = ({ children }) => {
       value={{
         list,
         communityList,
+        selected,
+        setSelected,
         results,
         search,
         setSearch,
