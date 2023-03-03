@@ -3,16 +3,51 @@ import { useSurvivorsContext } from "@ctx/Survivors"
 import styles from "./styles.module.scss"
 
 const Search = () => {
-  const { search, updateSearch } = useSurvivorsContext()
+  const {
+    communityList,
+    search,
+    setSearch,
+    community,
+    setCommunity,
+    infected,
+    setInfected,
+  } = useSurvivorsContext()
 
   return (
     <form className={styles.form}>
-      <input
-        placeholder="Search by Name"
-        type="text"
-        name={search}
-        onInput={({ target }) => updateSearch(target.value)}
-      />
+      <label className={styles.formField}>
+        <strong>Name</strong>
+        <input
+          className={styles.formInput}
+          type="text"
+          name={search}
+          onInput={({ target }) => setSearch(target.value)}
+        />
+      </label>
+      <label className={styles.formField}>
+        <strong>Community</strong>
+        <select
+          className={styles.formInput}
+          value={community}
+          onChange={({ target }) => setCommunity(target.value)}
+        >
+          <option value="">All</option>
+          {communityList.map(community => (
+            <option key={community} value={community}>
+              {community}
+            </option>
+          ))}
+        </select>
+      </label>
+      <label className={styles.formField}>
+        <strong>Infected only</strong>
+        <input
+          className={styles.formInput}
+          type="checkbox"
+          value={infected}
+          onChange={() => setInfected(!infected)}
+        />
+      </label>
     </form>
   )
 }
