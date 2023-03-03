@@ -7,8 +7,24 @@ import survivorsList from "@api/survivors.json"
 const Survivors = createContext()
 
 export const SurvivorsProvider = ({ children }) => {
+  const [search, setSearch] = useState("")
   const [list, setList] = useState([])
   const [results, setResults] = useState([])
+
+  const filter = text => {
+    if (!text) setResults(list)
+
+    const searchText = text.toLowerCase()
+    const filteredResults = list.filter(({ name }) =>
+      name.toLowerCase().includes(searchText)
+    )
+    setResults(filteredResults)
+  }
+
+  const updateSearch = text => {
+    setSearch(text)
+    filter(text)
+  }
 
   useEffect(() => {
     const survivors = getFromStorage("survivors") || survivorsList
@@ -22,6 +38,8 @@ export const SurvivorsProvider = ({ children }) => {
       value={{
         list,
         results,
+        search,
+        updateSearch,
       }}
     >
       {children}
