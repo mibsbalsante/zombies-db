@@ -1,14 +1,21 @@
 import { useSurvivorsContext } from "@ctx/Survivors"
 import { formatDate } from "@utl/format"
-// import { useEffect } from "react"
+import { ReactComponent as IconClose } from "@fa/xmark.svg"
 
 import styles from "./styles.module.scss"
 
 const Modal = () => {
-  const { survivorsImages, selected, setSelected } = useSurvivorsContext()
+  const { survivorsImages, selected, setSelected, setUpdatedSurvivor } =
+    useSurvivorsContext()
 
   const handleClose = () => {
     setSelected(null)
+  }
+
+  const handleUpdate = (field, value) => {
+    const updatedData = { ...selected, [field]: value }
+    setSelected(updatedData)
+    setUpdatedSurvivor(updatedData)
   }
 
   const survivorPicture = survivorsImages.find(
@@ -19,41 +26,56 @@ const Modal = () => {
     selected && (
       <div onClick={handleClose} className={styles.overflow}>
         <div onClick={ev => ev.stopPropagation()} className={styles.modal}>
-          <button onClick={handleClose}>close</button>
+          <button className={styles.modalClose} onClick={handleClose}>
+            <IconClose />
+          </button>
 
-          <h2>{selected.name}</h2>
+          <h2 className={styles.modalTitle}>{selected.name}</h2>
 
-          <img src={survivorPicture?.value} alt="" width="300" />
+          <img
+            className={styles.modalPicture}
+            src={survivorPicture?.value}
+            alt=""
+          />
 
-          <p>
-            Birthday: <input readOnly value={formatDate(selected.birthday)} />
-          </p>
-          <p>
-            Phone: <input readOnly value={selected.phone} />
-          </p>
-          <p>
-            Community: <input readOnly value={selected.community} />
-          </p>
-          <p>
-            Infected status:{" "}
-            <input
-              className={styles.tableCheckbox}
-              type="checkbox"
-              checked={selected.infected}
-              onChange={() => {}}
-            />
-          </p>
+          <form className={styles.modalForm}>
+            <label className={styles.modalFormField}>
+              Birthday:
+              <input readOnly value={formatDate(selected.birthday)} />
+            </label>
 
-          <hr />
+            <label className={styles.modalFormField}>
+              Phone:
+              <input readOnly value={selected.phone} />
+            </label>
 
-          <p>
-            About:{" "}
-            <textarea
-              value={selected.description}
-              onChange={() => {}}
-              rows="10"
-            />
-          </p>
+            <label className={styles.modalFormField}>
+              Community:
+              <input readOnly value={selected.community} />
+            </label>
+
+            <hr />
+
+            <label className={styles.modalFormField}>
+              Infected status:
+              <input
+                className={styles.tableCheckbox}
+                type="checkbox"
+                checked={selected.infected}
+                onChange={() => handleUpdate("infected", !selected.infected)}
+              />
+            </label>
+
+            <label className={styles.modalFormField}>
+              Description:
+              <textarea
+                value={selected.description}
+                onChange={({ target }) =>
+                  handleUpdate("description", target.value)
+                }
+              />
+            </label>
+          </form>
         </div>
       </div>
     )

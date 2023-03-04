@@ -19,11 +19,72 @@
 .modal {
   @include flex-container;
 
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: flex-start;
+  gap: 20px;
   position: relative;
   background-color: var(--color-bg-helper);
   margin: auto;
   max-width: 800px;
   padding: 24px 20px;
+  max-height: 90vh;
+  overflow: auto;
+  box-shadow: 0 0 8px -4px var(--color-grey-2);
+
+  &Close {
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 42px;
+    background-color: transparent;
+    border: 0 none;
+    padding: 0;
+  }
+
+  &Title {
+    width: 100%;
+    margin: 0;
+  }
+
+  &Picture {
+    max-width: 250px;
+    width: 100%;
+
+    @media (max-width: 678px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &Form {
+    display: inline-flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 12px;
+
+    hr {
+      width: 100%;
+    }
+  }
+
+  &FormField {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 6px;
+    font-weight: 600;
+
+    input,
+    textarea {
+      width: 100%;
+    }
+
+    input[type="checkbox"] {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
 }
