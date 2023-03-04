@@ -72,13 +72,13 @@
     "description": "A skilled member of S.T.A.R.S. who battles the undead and other bioweapons in a variety of dangerous situations."
   },
   {
-    "id": "83b19a8f-6cf2-4600-a9a7-1e00d64d123c",
-    "name": "Terry Chen",
-    "birthday": "1984-09-12",
-    "phone": "(555) 555-1357",
+    "id": "8c2a2a9e-09d1-4367-8dfc-520c7a97e205",
+    "name": "Juliet Starling",
+    "birthday": "1993-05-30",
+    "phone": "(555) 555-6789",
     "infected": false,
-    "community": "Daybreak",
-    "description": "A delivery driver who becomes a reluctant hero in a world where the sun has turned people into zombie-like creatures."
+    "community": "Lollipop Chainsaw",
+    "description": "A high school cheerleader who fights zombies with a chainsaw."
   },
   {
     "id": "8eeb7be9-6d9b-496e-a078-20d36c7cbbef",
@@ -99,12 +99,12 @@
     "description": "A member of a group of survivors who takes refuge in a shopping mall during a zombie outbreak, but becomes infected and turns into a zombie."
   },
   {
-    "id": "dbba41ee-cb80-4b90-9b03-fcbca9790bc8",
-    "name": "Shaun Riley",
-    "birthday": "1983-12-23",
-    "phone": "(555) 555-4801",
+    "id": "a453ccf3-5790-4a4d-9024-c13859b8e977",
+    "name": "Ellie Williams",
+    "birthday": "2001-06-14",
+    "phone": "(555) 555-4321",
     "infected": false,
-    "community": "Dead Rising",
-    "description": "A photojournalist who must navigate a mall filled with zombies and rescue survivors in order to uncover the truth behind the outbreak."
+    "community": "The Last of Us",
+    "description": "A survivor in a post-apocalyptic world who is immune to the Cordyceps fungus, which has turned most of humanity into aggressive, zombie-like creatures."
   }
 ]
