@@ -22,17 +22,26 @@ export const SurvivorsProvider = ({ children }) => {
   const [community, setCommunity] = useState("")
   const [infected, setInfected] = useState(false)
 
-  const _filterName = people => {
-    if (!search) return people
-
-    const searchText = search.toLowerCase()
-    return people.filter(({ name }) => name.toLowerCase().includes(searchText))
+  const setUpdatedSurvivor = survivor => {
+    const updatedList = list.map(person => {
+      if (person.id === survivor.id) return survivor
+      return person
+    })
+    setList(updatedList)
+    saveToStorage("survivors", updatedList)
   }
 
   const _setSurvivorsImages = async survivors => {
     const images = await requestAllImages(survivors)
     setSurvivorsImages(images)
     saveToStorage("survivorsImages", images)
+  }
+
+  const _filterName = people => {
+    if (!search) return people
+
+    const searchText = search.toLowerCase()
+    return people.filter(({ name }) => name.toLowerCase().includes(searchText))
   }
 
   const _filterCommunity = people => {
@@ -54,7 +63,7 @@ export const SurvivorsProvider = ({ children }) => {
 
   useEffect(() => {
     _filter()
-  }, [search, community, infected])
+  }, [list, search, community, infected])
 
   useEffect(() => {
     const survivors = getFromStorage("survivors") || survivorsList
@@ -89,6 +98,7 @@ export const SurvivorsProvider = ({ children }) => {
         setCommunity,
         infected,
         setInfected,
+        setUpdatedSurvivor,
       }}
     >
       {children}
