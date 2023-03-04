@@ -1,14 +1,19 @@
 import { useSurvivorsContext } from "@ctx/Survivors"
 import { formatDate } from "@utl/format"
+// import { useEffect } from "react"
 
 import styles from "./styles.module.scss"
 
 const Modal = () => {
-  const { selected, setSelected } = useSurvivorsContext()
+  const { survivorsImages, selected, setSelected } = useSurvivorsContext()
 
   const handleClose = () => {
     setSelected(null)
   }
+
+  const survivorPicture = survivorsImages.find(
+    ({ key }) => key === selected?.id
+  )
 
   return (
     selected && (
@@ -17,6 +22,8 @@ const Modal = () => {
           <button onClick={handleClose}>close</button>
 
           <h2>{selected.name}</h2>
+
+          <img src={survivorPicture?.value} alt="" width="300" />
 
           <p>
             Birthday: <input readOnly value={formatDate(selected.birthday)} />
