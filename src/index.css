@@ -43,6 +43,8 @@ textarea {
   --color-text: var(--color-grey-2);
   --color-primary: #778beb;
   --color-secondary: #546de5;
+
+  --shadow: 0 0 8px -4px var(--color-grey-2);
   /* -- */
 
   color: var(--color-text);
