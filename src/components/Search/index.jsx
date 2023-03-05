@@ -18,6 +18,7 @@ const Search = () => {
       <label className={styles.formField}>
         <strong>Name</strong>
         <input
+          data-testid="search-name"
           className={styles.formInput}
           type="text"
           name={search}
@@ -42,6 +43,7 @@ const Search = () => {
       <label className={styles.formField}>
         <strong>Infected only</strong>
         <input
+          data-testid="search-infected"
           className={styles.formInput}
           type="checkbox"
           checked={infected}
