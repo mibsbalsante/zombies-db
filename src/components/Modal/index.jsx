@@ -19,7 +19,7 @@ const Modal = () => {
   }
 
   const survivorPicture = survivorsImages.find(
-    ({ key }) => key === selected?.id
+    survivor => survivor?.key === selected?.id
   )
 
   return (
