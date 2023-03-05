@@ -5718,31 +5718,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-react@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "vite-react@workspace:."
-  dependencies:
-    "@testing-library/jest-dom": ^5.16.5
-    "@testing-library/react": ^14.0.0
-    "@types/react": ^18.0.27
-    "@types/react-dom": ^18.0.10
-    "@vitejs/plugin-react": ^3.1.0
-    commitizen: ^4.3.0
-    cz-conventional-changelog: ^3.3.0
-    eslint: ^8.34.0
-    eslint-config-prettier: ^8.6.0
-    eslint-plugin-react: ^7.32.2
-    jest-environment-jsdom: ^29.4.3
-    prettier: ^2.8.4
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    sass: ^1.58.3
-    vite: ^4.1.0
-    vite-plugin-svgr: ^2.4.0
-    vitest: ^0.29.2
-  languageName: unknown
-  linkType: soft
-
 "vite@npm:^3.0.0 || ^4.0.0, vite@npm:^4.1.0":
   version: 4.1.4
   resolution: "vite@npm:4.1.4"
@@ -6060,3 +6035,28 @@ __metadata:
   checksum: 2cac84540f65c64ccc1683c267edce396b26b1e931aa429660aefac8fbe0188167b7aee815a3c22fa59a28a58d898d1a2b1825048f834d8d629f4c2a5d443801
   languageName: node
   linkType: hard
+
+"zombies-db@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "zombies-db@workspace:."
+  dependencies:
+    "@testing-library/jest-dom": ^5.16.5
+    "@testing-library/react": ^14.0.0
+    "@types/react": ^18.0.27
+    "@types/react-dom": ^18.0.10
+    "@vitejs/plugin-react": ^3.1.0
+    commitizen: ^4.3.0
+    cz-conventional-changelog: ^3.3.0
+    eslint: ^8.34.0
+    eslint-config-prettier: ^8.6.0
+    eslint-plugin-react: ^7.32.2
+    jest-environment-jsdom: ^29.4.3
+    prettier: ^2.8.4
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    sass: ^1.58.3
+    vite: ^4.1.0
+    vite-plugin-svgr: ^2.4.0
+    vitest: ^0.29.2
+  languageName: unknown
+  linkType: soft
