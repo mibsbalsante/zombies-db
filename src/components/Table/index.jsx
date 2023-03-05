@@ -24,12 +24,15 @@ const Table = () => {
           {results.length > 0 ? (
             results.map(person => (
               <tr key={person.id}>
-                <td>{person.name}</td>
-                <td>{formatDate(person.birthday)}</td>
-                <td>{person.phone}</td>
-                <td>{person.community}</td>
-                <td>
+                <td data-testid="table-name">{person.name}</td>
+                <td data-testid="table-birthday">
+                  {formatDate(person.birthday)}
+                </td>
+                <td data-testid="table-phone">{person.phone}</td>
+                <td data-testid="table-community">{person.community}</td>
+                <td data-testid="table-infected">
                   <input
+                    data-testid="table-infected"
                     className={styles.tableCheckbox}
                     type="checkbox"
                     checked={person.infected}
