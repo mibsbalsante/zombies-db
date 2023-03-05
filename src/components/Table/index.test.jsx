@@ -6,7 +6,7 @@ import survivorsList from "@api/survivors.json"
 import Table from "."
 
 describe("@cmp/Table", () => {
-  it("should mount", async () => {
+  it("should mount with all survivors data", async () => {
     const { findAllByTestId } = render(<Table />)
 
     const nameList = await findAllByTestId("table-name")
